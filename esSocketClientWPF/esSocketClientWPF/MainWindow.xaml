@@ -1,0 +1,28 @@
+﻿<Window x:Class="esSocketClientWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:xctk="http://schemas/xceed.com/wpf/xaml/toolkit" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:esSocketClientWPF" xmlns:xctk1="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="CLIENT" Height="600" Width="800">
+    <Grid>
+        <xctk1:ColorPicker Name="cp" Margin="229,325,412,211" DisplayColorAndName="True" AvailableColorsSortingMode="HueSaturationBrightness" SelectedColorChanged="cp_SelectedColorChanged" />
+        <InkCanvas x:Name="canvInvio" Margin="37,57,400,278" Background="#FFEADEDE"/>
+        <InkCanvas x:Name="canvRicevi" Margin="420,57,30,277" Background="#FFEADEDE" EditingMode="None" IsEnabled="False"/>
+        <Button x:Name="btnStart" Content="Start ▶️" HorizontalAlignment="Left" Margin="453,325,0,0" VerticalAlignment="Top" Height="45" Width="126" Click="btnStart_Click" FontSize="14"/>
+        <Button x:Name="btnCaricaFile" Content="Carica file📎" HorizontalAlignment="Left" Margin="453,396,0,0" VerticalAlignment="Top" Height="45" Width="126" Click="btnCaricaFile_Click" FontSize="14"/>
+        <Button x:Name="btnInfo" Content="Help❓" HorizontalAlignment="Left" Margin="639,325,0,0" VerticalAlignment="Top" Height="45" Width="126" Click="btnInfo_Click" FontSize="14"/>
+        <Label Content="To send:" HorizontalAlignment="Left" Margin="46,456,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <TextBox x:Name="txt_invia" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="46,487,0,0" Width="342" Height="41" TextChanged="txt_invia_TextChanged" FontSize="14"/>
+        <Label x:Name="lbl_received" Content="" HorizontalAlignment="Left" Margin="415,487,0,0" VerticalAlignment="Top" Height="41" FontSize="14"/>
+        <Label x:Name="lbl_infoConnection" Content="" HorizontalAlignment="Left" Margin="206,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_gomma" Content="Gomma🧽" HorizontalAlignment="Left" Margin="45,396,0,0" VerticalAlignment="Top" Height="45" Width="126" Click="btn_gomma_Click" FontSize="14"/>
+        <Slider x:Name="sld_size" HorizontalAlignment="Left" Margin="45,349,0,0" VerticalAlignment="Top" Width="142" Height="24" Minimum="1" SmallChange="1" ValueChanged="sld_size_ValueChanged"/>
+        <Label Content="Grandezza pennello" HorizontalAlignment="Left" Height="27" Margin="46,322,0,0" VerticalAlignment="Top" Width="141" FontSize="14"/>
+        <Button x:Name="btnClear" Content="Clear🧹" HorizontalAlignment="Left" Margin="639,396,0,0" VerticalAlignment="Top" Height="45" Width="126" Click="btnClear_Click" FontSize="14"/>
+        <Label Content="Invio" HorizontalAlignment="Left" Margin="38,26,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label Content="Ricevi" HorizontalAlignment="Left" Margin="420,26,0,0" VerticalAlignment="Top" FontSize="14"/>
+    </Grid>
+</Window>

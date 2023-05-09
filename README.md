@@ -2,7 +2,7 @@
 Invio di Canvas tramite socket e possibilità di salvarli e caricarli da Google Drive
 
 - Usare come credenziali la mail scolastica
-- La prima volta che fa un operazione sulla finestra di Gestione Drive si apre la pagina per autenticarsi
+- La prima volta che fa un operazione sulla finestra di Gestione Drive si apre la pagina per autenticarsi, fare continua successivamente e spuntare i permessi nella schermata successiva
 - A me non arriva nessuna credenziale o informazione, la cartella compare sul drive personale se la si vuole vedere dal sito
 - Gli account che possono entrare li devo accettare io dalla dashboard di google cloud(per ora ho inserito solo la sua scolastica)
 - Se si chiude una schermata vanno riavviate entrambe
